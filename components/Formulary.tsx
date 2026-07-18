@@ -45,10 +45,36 @@ export default function Formulary() {
     return () => document.removeEventListener("keydown", onKey);
   }, []);
 
+  // Position-preserving scroll lock: pin the body while the modal is open,
+  // then restore the exact scroll position on close. Works reliably across
+  // desktop and mobile regardless of which element is the scroll container.
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    if (!open) return;
+    const body = document.body;
+    const scrollY = window.scrollY;
+    const gap = window.innerWidth - document.documentElement.clientWidth;
+    const prev = {
+      position: body.style.position,
+      top: body.style.top,
+      left: body.style.left,
+      right: body.style.right,
+      width: body.style.width,
+      paddingRight: body.style.paddingRight,
+    };
+    body.style.position = "fixed";
+    body.style.top = `-${scrollY}px`;
+    body.style.left = "0";
+    body.style.right = "0";
+    body.style.width = "100%";
+    if (gap > 0) body.style.paddingRight = `${gap}px`;
     return () => {
-      document.body.style.overflow = "";
+      body.style.position = prev.position;
+      body.style.top = prev.top;
+      body.style.left = prev.left;
+      body.style.right = prev.right;
+      body.style.width = prev.width;
+      body.style.paddingRight = prev.paddingRight;
+      window.scrollTo(0, scrollY);
     };
   }, [open]);
 
