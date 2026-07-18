@@ -183,9 +183,9 @@ section{padding:112px 0}
 .empty{grid-column:1/-1;text-align:center;padding:50px;color:#8a8a72;font-size:16px}
 
 /* MODAL */
-.backdrop{position:fixed;inset:0;background:rgba(8,14,10,.7);backdrop-filter:blur(5px);z-index:100;display:none;align-items:flex-start;justify-content:center;padding:40px 20px;overflow-y:auto}
+.backdrop{position:fixed;inset:0;background:rgba(8,14,10,.7);backdrop-filter:blur(5px);z-index:100;display:none;align-items:flex-start;justify-content:center;padding:40px 20px;overflow:hidden}
 .backdrop.open{display:flex}
-.modal{background:var(--parch);border-radius:6px;max-width:720px;width:100%;max-height:calc(100vh - 80px);max-height:calc(100dvh - 80px);overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;animation:modalin .35s ease;margin:0 auto;border:1px solid var(--gold)}
+.modal{background:var(--parch);border-radius:6px;max-width:720px;width:100%;max-height:calc(100vh - 80px);max-height:calc(100dvh - 80px);overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;animation:modalin .35s ease;margin:0 auto;border:1px solid var(--gold)}
 .m-head{padding:30px 32px 24px;color:var(--parch);position:sticky;top:0;z-index:2}
 .m-head .mtag{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.92}
 .m-head h3{font-family:var(--font-fraunces);font-size:31px;font-weight:500;margin-top:8px;color:#fff}
@@ -343,7 +343,13 @@ footer{background:#0A130D;color:#8a9784;padding:64px 0 36px;border-top:1px solid
   .philo .wrap{padding:90px 34px}
   .m-cols{grid-template-columns:1fr;gap:20px}
 }
-@media(max-width:600px){.herb-grid,.prod-grid{grid-template-columns:1fr}.herb{border-right:none!important}}
+@media(max-width:600px){
+  .herb-grid,.prod-grid{grid-template-columns:1fr}
+  .herb{border-right:none!important}
+  .backdrop{padding:14px 10px}
+  .modal{max-height:calc(100vh - 28px);max-height:calc(100dvh - 28px)}
+  .m-figure img{max-height:300px}
+}
 @media(prefers-reduced-motion:reduce){
   .reveal{opacity:1;transform:none;transition:none}
   html{scroll-behavior:auto}
