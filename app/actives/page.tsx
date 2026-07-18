@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "The Actives",
   description:
     "The phyto-actives at the heart of the Nature Life Science range — tulsi, turmeric, amla, ashwagandha, neem and garlic, each quantified in every batch.",
+  alternates: { canonical: "/actives" },
 };
 
 export default function Page() {

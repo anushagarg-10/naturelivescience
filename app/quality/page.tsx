@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Quality & Provenance",
   description:
     "Manufactured under ISO 9001:2015 and GMP-certified processes, with technical support from A.V.C. Nutrition, Dehradun.",
+  alternates: { canonical: "/quality" },
 };
 
 export default function Page() {
