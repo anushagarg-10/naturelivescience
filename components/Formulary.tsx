@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 import {
   PRODUCTS,
   CATEGORIES,
@@ -181,7 +182,7 @@ function ProductModal({
 }) {
   if (!product) return null;
   const c = COLOR_HEX[product.color];
-  return (
+  const modalContent = (
     <div
       className="backdrop open"
       role="dialog"
@@ -257,4 +258,11 @@ function ProductModal({
       </div>
     </div>
   );
+
+  // Render the modal on <body> so it escapes any ancestor with a transform
+  // (e.g. the page-transition wrapper), which would otherwise trap the fixed
+  // overlay and mis-position it when the page is scrolled.
+  return typeof document !== "undefined"
+    ? createPortal(modalContent, document.body)
+    : null;
 }
