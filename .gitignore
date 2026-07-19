@@ -16,3 +16,7 @@ next-env.d.ts
 
 # Unrelated local project — not part of this website
 /portfolio
+
+# Design source files and backups (kept local, not needed to build)
+*.pdf
+*.zip
