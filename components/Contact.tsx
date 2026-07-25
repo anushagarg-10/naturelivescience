@@ -2,7 +2,10 @@
 
 import { useState } from "react";
 
-type Status = "idle" | "sending" | "sent" | "error";
+// WhatsApp number in international format, digits only (for wa.me links).
+const WHATSAPP = "919466964266"; // +91 94669 64266
+
+type Status = "idle" | "error" | "opened";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -22,33 +25,31 @@ export default function Contact() {
     ) =>
       setForm((f) => ({ ...f, [k]: e.target.value }));
 
-  async function submit() {
+  function submit() {
     if (!form.name || !form.contact) {
       setStatus("error");
       return;
     }
-    setStatus("sending");
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-      if (!res.ok) throw new Error("Request failed");
-      setStatus("sent");
-    } catch {
-      setStatus("error");
-    }
+    const text = [
+      "New enquiry — Nature Life Science",
+      "",
+      `Name: ${form.name}`,
+      `Contact: ${form.contact}`,
+      `I am a: ${form.type}`,
+      "",
+      `Enquiry: ${form.message || "—"}`,
+    ].join("\n");
+    const url = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank", "noopener,noreferrer");
+    setStatus("opened");
   }
 
   const label =
-    status === "sending"
-      ? "Sending…"
-      : status === "sent"
-      ? "Thank you — we will be in touch"
-      : status === "error"
-      ? "Something went wrong — try again"
-      : "Send enquiry";
+    status === "error"
+      ? "Please add your name and contact"
+      : status === "opened"
+      ? "Opening WhatsApp…"
+      : "Send enquiry on WhatsApp";
 
   return (
     <section className="contact" id="contact">
@@ -61,9 +62,25 @@ export default function Contact() {
             </h2>
             <p>
               For product advice, dosing guidance or distribution enquiries,
-              reach us directly.
+              reach us directly — the fastest way is WhatsApp.
             </p>
             <div className="contact-list">
+              <a
+                className="ci ci-link"
+                href={`https://wa.me/${WHATSAPP}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="cic">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-1.77-.88-2.93-1.57-4.1-3.57-.3-.52.3-.48.87-1.6.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.5.71.3 1.27.48 1.7.62.72.23 1.37.2 1.88.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35zM12 2a10 10 0 0 0-8.6 15.05L2 22l5.1-1.33A10 10 0 1 0 12 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="lab">WhatsApp</div>
+                  <div className="val">+91 94669 64266</div>
+                </div>
+              </a>
               <div className="ci">
                 <div className="cic">
                   <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -72,7 +89,11 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="lab">Technical query</div>
-                  <div className="val">0184-7964609 &nbsp;·&nbsp; 9817023461</div>
+                  <div className="val">
+                    <a href="tel:+911847964609">0184-7964609</a>
+                    &nbsp;·&nbsp;
+                    <a href="tel:+919817023461">9817023461</a>
+                  </div>
                 </div>
               </div>
               <div className="ci">
@@ -84,7 +105,11 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="lab">Website</div>
-                  <div className="val">www.naturelifescience.in</div>
+                  <div className="val">
+                    <a href="https://naturelifescience.in" target="_blank" rel="noopener noreferrer">
+                      www.naturelifescience.in
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="ci">
@@ -142,13 +167,15 @@ export default function Contact() {
               className="btn btn-gold"
               type="button"
               onClick={submit}
-              disabled={status === "sending" || status === "sent"}
             >
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-1.77-.88-2.93-1.57-4.1-3.57-.3-.52.3-.48.87-1.6.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.5.71.3 1.27.48 1.7.62.72.23 1.37.2 1.88.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35zM12 2a10 10 0 0 0-8.6 15.05L2 22l5.1-1.33A10 10 0 1 0 12 2z" />
+              </svg>
               {label}
             </button>
             <p className="form-note">
-              Add your <code>RESEND_API_KEY</code> in environment variables to
-              deliver enquiries by email.
+              Tap <strong>Send</strong> and your enquiry opens in WhatsApp,
+              ready to send. On a computer it opens WhatsApp Web.
             </p>
           </div>
         </div>

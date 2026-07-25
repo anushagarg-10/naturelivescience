@@ -235,6 +235,12 @@ section{padding:112px 0}
 .ci .cic{flex:none;width:42px;height:42px;border-radius:50%;border:1px solid var(--gold-dim);display:grid;place-items:center;color:var(--gold-dim)}
 .ci .lab{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-d);font-weight:700}
 .ci .val{font-size:14.5px;color:var(--leaf-ink);font-weight:500;margin-top:2px}
+.ci .val a{color:inherit;transition:color .2s}
+.ci .val a:hover{color:var(--gold-dim)}
+a.ci-link{text-decoration:none;transition:transform .2s}
+a.ci-link:hover{transform:translateX(3px)}
+a.ci-link:hover .cic{background:var(--gold-dim);color:#fff;border-color:var(--gold-dim)}
+a.ci-link .cic{transition:background .2s,color .2s,border-color .2s}
 .form{background:#ECE3CD;border:1px solid var(--parch-d);border-radius:8px;padding:32px;display:flex;flex-direction:column;gap:14px}
 .form label{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--sage-d)}
 .form input,.form select,.form textarea{width:100%;padding:13px 15px;border:1px solid var(--parch-d);border-radius:4px;background:var(--parch);font-family:inherit;font-size:15px;color:var(--leaf-ink);margin-top:6px;transition:border .2s}
