@@ -16,7 +16,7 @@ const PILLARS = [
   {
     no: "iii",
     title: "Made to a standard",
-    body: "Manufactured under ISO 9001:2015 and GMP-certified processes, with technical support from A.V.C. Nutrition, Dehradun.",
+    body: "Manufactured under ISO 9001:2001 and GMP-certified processes, with technical support from A.V.C. Nutrition, Dehradun.",
   },
   {
     no: "iv",
@@ -60,7 +60,7 @@ export default function About() {
             <div className="hero-meta about-meta">
               <span><i /> Est. 2026</span>
               <span><i /> {PRODUCTS.length} formulations</span>
-              <span><i /> ISO 9001:2015</span>
+              <span><i /> ISO 9001:2001</span>
               <span><i /> GMP certified</span>
             </div>
           </div>

@@ -22,7 +22,7 @@ export default function Footer() {
               poultry — immunity, gut health, production, minerals and more.
             </p>
             <div className="foot-cert">
-              <span>ISO 9001:2015</span>
+              <span>ISO 9001:2001</span>
               <span>GMP CERTIFIED</span>
               <span>REG. TRADEMARK</span>
             </div>
