@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="foot-bottom">
-          <span>© 2026 Nature Life Science · For animal use only</span>
+          <span>© 2019–2026 Nature Life Science · For animal use only</span>
           <span>Scientific &amp; natural solution for Poultry Health</span>
         </div>
       </div>

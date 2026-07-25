@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="wrap">
         <div className="hero-grid">
           <div className="reveal">
-            <div className="eyebrow">A company by AVC Nutrition · Est. 2026</div>
+            <div className="eyebrow">A company by AVC Nutrition · Est. 2019</div>
             <h1>
               A <em>materia&nbsp;medica</em> for the modern flock.
             </h1>
@@ -67,7 +67,7 @@ export default function Hero() {
                 <textPath href="#seal-arc" startOffset="2%">· HERBAL · NUTRITIONAL · TRUSTED ·</textPath>
               </text>
               <text x="50" y="47" textAnchor="middle" fontFamily="serif" fontSize="16" fill="#E2C272">NLS</text>
-              <text x="50" y="62" textAnchor="middle" fontFamily="monospace" fontSize="6.5" letterSpacing="1.5" fill="#7FA178">EST 2026</text>
+              <text x="50" y="62" textAnchor="middle" fontFamily="monospace" fontSize="6.5" letterSpacing="1.5" fill="#7FA178">EST 2019</text>
             </svg>
           </div>
         </div>

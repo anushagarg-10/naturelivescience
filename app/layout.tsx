@@ -101,6 +101,7 @@ export default function RootLayout({
         image: `${SITE_URL}/opengraph-image`,
         description:
           "Herbal and nutritional supplements for poultry health — immunity, gut health, production, minerals and more. ISO 9001:2001 & GMP certified.",
+        foundingDate: "2019",
         parentOrganization: { "@type": "Organization", name: "AVC Nutrition" },
         address: [
           {

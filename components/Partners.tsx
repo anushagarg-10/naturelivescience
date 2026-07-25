@@ -5,13 +5,14 @@ export default function Partners() {
     <section className="partners">
       <div className="wrap">
         <div className="sec-head partner-head reveal">
-          <span className="eyebrow">A trusted partnership</span>
+          <span className="eyebrow">The company</span>
           <h2>
-            Nature Life Science <em>×</em> AVC Nutrition.
+            Nature Life Science, a company by <em>AVC&nbsp;Nutrition</em>.
           </h2>
           <p>
-            A company by AVC Nutrition, with technical consulting from Nutrien
-            Ag Solutions, Braidwood, Australia.
+            Herbal and nutritional poultry health — backed by AVC Nutrition,
+            with technical consulting from Nutrien Ag Solutions, Braidwood,
+            Australia.
           </p>
         </div>
         <div className="partner-logos reveal">

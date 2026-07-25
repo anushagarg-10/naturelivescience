@@ -58,7 +58,7 @@ export default function About() {
               A.V.C. Nutrition&rsquo;s technical expertise.
             </p>
             <div className="hero-meta about-meta">
-              <span><i /> Est. 2026</span>
+              <span><i /> Est. 2019</span>
               <span><i /> {PRODUCTS.length} formulations</span>
               <span><i /> ISO 9001:2001</span>
               <span><i /> GMP certified</span>
