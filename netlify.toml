@@ -1,21 +1,12 @@
 # Netlify configuration for the Next.js app.
 # Netlify auto-detects Next.js and applies its official runtime, which turns the
 # app/api/contact route into a serverless function — no extra plugin config needed.
+#
+# Security headers are set in next.config.mjs (headers()) so they apply to the
+# Next-rendered pages; netlify.toml [[headers]] do not cover those routes.
 
 [build]
   command = "npm run build"
 
 [build.environment]
   NODE_VERSION = "20"
-
-# Security headers applied to every response.
-# (Netlify already sets Strict-Transport-Security and X-Content-Type-Options.)
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=(), browsing-topics=()"
-    Cross-Origin-Opener-Policy = "same-origin"
-    Content-Security-Policy = "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; img-src 'self' data: https://images.unsplash.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; form-action 'self'; manifest-src 'self'; upgrade-insecure-requests"
