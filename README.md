@@ -1,4 +1,4 @@
-# Nature Life Science — website
+# Nature Life Science - website
 
 Marketing site for Nature Life Science (herbal & nutritional poultry supplements),
 built with **Next.js (App Router) + TypeScript**.
@@ -33,11 +33,11 @@ Set these in `.env.local` (local) and in your host's dashboard (production):
 
 | Variable | Purpose |
 | --- | --- |
-| `RESEND_API_KEY` | API key from [resend.com](https://resend.com) — enables the contact form |
+| `RESEND_API_KEY` | API key from [resend.com](https://resend.com) - enables the contact form |
 | `CONTACT_TO_EMAIL` | Address that receives enquiries |
 | `CONTACT_FROM_EMAIL` | Verified sender (e.g. `Nature Life Science <enquiries@naturelifescience.com>`). Use `onboarding@resend.dev` while testing. |
 
-The site builds and runs without these — only the contact form needs them to deliver mail.
+The site builds and runs without these - only the contact form needs them to deliver mail.
 
 ## 3. Deploy to Vercel
 
@@ -52,9 +52,9 @@ HTTPS is automatic.
 
 Three photos are currently free-license Unsplash URLs, referenced in:
 
-- `components/Hero.tsx` — `HERO_PHOTO`
-- `components/Philosophy.tsx` — `BAND_PHOTO`
-- `components/Quality.tsx` — `QUALITY_PHOTO`
+- `components/Hero.tsx` - `HERO_PHOTO`
+- `components/Philosophy.tsx` - `BAND_PHOTO`
+- `components/Quality.tsx` - `QUALITY_PHOTO`
 
 To use the client's own images, drop them in `public/` (e.g. `public/hero.jpg`) and
 change the `src` to `"/hero.jpg"`. You can then remove the `images.remotePatterns`
@@ -62,12 +62,12 @@ entry in `next.config.mjs`. The duotone/arch treatment is CSS, so it carries ove
 
 ## 5. Editing products
 
-All product data lives in `lib/products.ts` — add, edit or reorder entries there and
+All product data lives in `lib/products.ts` - add, edit or reorder entries there and
 the formulary grid, filters, search and detail modals update automatically.
 
 ## Notes
 
 - 15 products, grouped into six categories in `lib/products.ts`.
-- The ISO mark is shown as **ISO 9001:2015** (the current standard, per the AVC approach sheet). Note the older contact page reads "9001-2001" — confirm the correct wording with the client.
+- The ISO mark is shown as **ISO 9001:2015** (the current standard, per the AVC approach sheet). Note the older contact page reads "9001-2001" - confirm the correct wording with the client.
 - Domain/branding use **naturelifescience.in** and "A company by AVC Nutrition".
 - `prefers-reduced-motion` is respected throughout.
