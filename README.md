@@ -1,73 +1,63 @@
-# Nature Life Science - website
+# Nature Life Science
 
-Marketing site for Nature Life Science (herbal & nutritional poultry supplements),
-built with **Next.js (App Router) + TypeScript**.
+A production marketing website for **Nature Life Science**, a herbal and nutritional poultry-health supplement company (a company by AVC Nutrition). Designed, built, and deployed end to end.
 
-- Section components in `components/`
-- Product catalogue (typed) in `lib/products.ts`
-- Photos via `next/image`, fonts via `next/font`
-- Contact form posts to `app/api/contact/route.ts` → **Resend**
+**Live:** https://naturelifescience.in
 
----
+![Nature Life Science](https://naturelifescience.in/opengraph-image)
 
-## 1. Run locally
+Built with **Next.js (App Router) and TypeScript**, deployed on Netlify with a custom domain and automatic HTTPS.
+
+## Highlights
+
+- **Multi-page App Router site** (Home, The Actives, The Formulary, Quality, About, Contact) with animated page transitions and scroll-reveal, all gated behind `prefers-reduced-motion`.
+- **Typed product catalogue** as a single source of truth: 16 products across 7 categories live in `lib/products.ts`, and the searchable/filterable formulary grid plus detail views derive from it automatically.
+- **Accessible product modal** rendered through a React portal (to escape an ancestor `transform` that otherwise traps a fixed overlay), with a position-preserving body scroll-lock and internal scrolling under a sticky header, so it behaves correctly on both mobile and desktop.
+- **SEO foundation:** sitemap, robots, per-page canonical URLs, Open Graph and Twitter cards, Organization/WebSite JSON-LD, a web manifest, a favicon, and a 1200x630 Open Graph image generated with `next/og`.
+- **Security hardening:** Content-Security-Policy, X-Frame-Options, Referrer-Policy, Permissions-Policy, Cross-Origin-Opener-Policy and HSTS, applied to every route via `next.config` headers.
+- **Performance:** self-hosted fonts (`next/font`), optimized responsive images (`next/image`), and static prerendering of every page.
+- **Contact without a backend dependency:** WhatsApp click-to-chat with the enquiry pre-filled from the form, plus an optional Resend-backed email API route.
+
+## Tech stack
+
+- **Framework:** Next.js 14 (App Router), React 18
+- **Language:** TypeScript
+- **Styling:** hand-written CSS, no UI framework
+- **Media:** `next/image`, `next/font`, `next/og`
+- **Email:** Resend (serverless route handler)
+- **Hosting:** Netlify (CI/CD from GitHub) with a custom domain and automatic HTTPS
+
+## Project structure
+
+```
+app/             App Router pages, API route, metadata, sitemap, robots, OG image, manifest
+components/      Section and UI components
+lib/products.ts  Typed product catalogue (single source of truth)
+public/          Images: product datasheets, logos, photography
+```
+
+## Run locally
 
 Requires Node 18.18+ (Node 20 LTS recommended).
 
 ```bash
 npm install
-cp .env.example .env.local   # then fill in values (see below)
-npm run dev                  # http://localhost:3000
+npm run dev        # http://localhost:3000
 ```
 
-Build / production check:
+Production build:
 
 ```bash
 npm run build
 npm start
 ```
 
-## 2. Environment variables
+## Environment variables (optional)
 
-Set these in `.env.local` (local) and in your host's dashboard (production):
+The site builds and runs without these. They only enable email delivery for the contact form, which also works through WhatsApp with no setup.
 
 | Variable | Purpose |
 | --- | --- |
-| `RESEND_API_KEY` | API key from [resend.com](https://resend.com) - enables the contact form |
+| `RESEND_API_KEY` | API key from resend.com |
 | `CONTACT_TO_EMAIL` | Address that receives enquiries |
-| `CONTACT_FROM_EMAIL` | Verified sender (e.g. `Nature Life Science <enquiries@naturelifescience.com>`). Use `onboarding@resend.dev` while testing. |
-
-The site builds and runs without these - only the contact form needs them to deliver mail.
-
-## 3. Deploy to Vercel
-
-1. Push this folder to a new GitHub repo.
-2. In Vercel → **New Project** → import the repo (framework auto-detected as Next.js).
-3. Add the three environment variables above under **Settings → Environment Variables**.
-4. Deploy. Then **Settings → Domains** → add `naturelifescience.com` and `www.naturelifescience.com`, and set the DNS records Vercel shows at your registrar.
-
-HTTPS is automatic.
-
-## 4. Swapping in real photography
-
-Three photos are currently free-license Unsplash URLs, referenced in:
-
-- `components/Hero.tsx` - `HERO_PHOTO`
-- `components/Philosophy.tsx` - `BAND_PHOTO`
-- `components/Quality.tsx` - `QUALITY_PHOTO`
-
-To use the client's own images, drop them in `public/` (e.g. `public/hero.jpg`) and
-change the `src` to `"/hero.jpg"`. You can then remove the `images.remotePatterns`
-entry in `next.config.mjs`. The duotone/arch treatment is CSS, so it carries over.
-
-## 5. Editing products
-
-All product data lives in `lib/products.ts` - add, edit or reorder entries there and
-the formulary grid, filters, search and detail modals update automatically.
-
-## Notes
-
-- 15 products, grouped into six categories in `lib/products.ts`.
-- The ISO mark is shown as **ISO 9001:2015** (the current standard, per the AVC approach sheet). Note the older contact page reads "9001-2001" - confirm the correct wording with the client.
-- Domain/branding use **naturelifescience.in** and "A company by AVC Nutrition".
-- `prefers-reduced-motion` is respected throughout.
+| `CONTACT_FROM_EMAIL` | Verified sender address |
