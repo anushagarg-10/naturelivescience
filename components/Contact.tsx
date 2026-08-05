@@ -31,13 +31,13 @@ export default function Contact() {
       return;
     }
     const text = [
-      "New enquiry — Nature Life Science",
+      "New enquiry - Nature Life Science",
       "",
       `Name: ${form.name}`,
       `Contact: ${form.contact}`,
       `I am a: ${form.type}`,
       "",
-      `Enquiry: ${form.message || "—"}`,
+      `Enquiry: ${form.message || "-"}`,
     ].join("\n");
     const url = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank", "noopener,noreferrer");
@@ -48,7 +48,7 @@ export default function Contact() {
     status === "error"
       ? "Please add your name and contact"
       : status === "opened"
-      ? "Opening WhatsApp…"
+      ? "Opening WhatsApp..."
       : "Send enquiry on WhatsApp";
 
   return (
@@ -62,7 +62,7 @@ export default function Contact() {
             </h2>
             <p>
               For product advice, dosing guidance or distribution enquiries,
-              reach us directly — the fastest way is WhatsApp.
+              reach us directly - the fastest way is WhatsApp.
             </p>
             <div className="contact-list">
               <a
@@ -149,7 +149,7 @@ export default function Contact() {
               <input id="contact" type="text" placeholder="How can we reach you" value={form.contact} onChange={update("contact")} />
             </div>
             <div>
-              <label htmlFor="type">I am a…</label>
+              <label htmlFor="type">I am a...</label>
               <select id="type" value={form.type} onChange={update("type")}>
                 <option>Layer / egg producer</option>
                 <option>Broiler producer</option>
@@ -161,7 +161,7 @@ export default function Contact() {
             </div>
             <div>
               <label htmlFor="msg">Your enquiry</label>
-              <textarea id="msg" rows={3} placeholder="Flock size, challenge, or products of interest…" value={form.message} onChange={update("message")} />
+              <textarea id="msg" rows={3} placeholder="Flock size, challenge, or products of interest..." value={form.message} onChange={update("message")} />
             </div>
             <button
               className="btn btn-gold"

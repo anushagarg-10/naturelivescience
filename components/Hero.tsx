@@ -17,7 +17,7 @@ export default function Hero() {
               A <em>materia&nbsp;medica</em> for the modern flock.
             </h1>
             <p className="lede">
-              Where herbal tradition meets feed science — tulsi, amla, ashwagandha
+              Where herbal tradition meets feed science - tulsi, amla, ashwagandha
               and turmeric, formulated with organic minerals, enzymes and
               probiotics to keep poultry well, from the first chick to the last lay.
             </p>

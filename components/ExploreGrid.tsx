@@ -6,7 +6,7 @@ const CARDS = [
     no: "i",
     title: "The actives",
     blurb:
-      "The phyto-actives at the heart of the range — tulsi, turmeric, amla, ashwagandha and more, each quantified in every batch.",
+      "The phyto-actives at the heart of the range - tulsi, turmeric, amla, ashwagandha and more, each quantified in every batch.",
     cta: "Meet the botanicals",
   },
   {
@@ -14,7 +14,7 @@ const CARDS = [
     no: "ii",
     title: "The formulary",
     blurb:
-      "The complete catalogue — search or filter by need, then open any entry for its full composition, indications and dosage.",
+      "The complete catalogue - search or filter by need, then open any entry for its full composition, indications and dosage.",
     cta: "Open the formulary",
   },
   {
@@ -45,7 +45,7 @@ export default function ExploreGrid() {
             Four ways into the <em>materia medica</em>.
           </h2>
           <p>
-            From the botanicals themselves to the finished formulary — begin
+            From the botanicals themselves to the finished formulary - begin
             wherever your flock needs it most.
           </p>
         </div>

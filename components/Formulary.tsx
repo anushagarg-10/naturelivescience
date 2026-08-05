@@ -101,7 +101,7 @@ export default function Formulary() {
             </svg>
             <input
               type="search"
-              placeholder="Search by need — liver, calcium, gut, anaemia…"
+              placeholder="Search by need - liver, calcium, gut, anaemia..."
               aria-label="Search products"
               value={query}
               onChange={(e) => setQuery(e.target.value)}

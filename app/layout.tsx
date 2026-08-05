@@ -29,11 +29,11 @@ const SITE_URL = "https://naturelifescience.in";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Nature Life Science — A Materia Medica for the Modern Flock",
+    default: "Nature Life Science - A Materia Medica for the Modern Flock",
     template: "%s · Nature Life Science",
   },
   description:
-    "Herbal and nutritional supplements for poultry health — immunity, gut health, production, minerals and more. ISO 9001:2001 & GMP certified. A company by AVC Nutrition.",
+    "Herbal and nutritional supplements for poultry health - immunity, gut health, production, minerals and more. ISO 9001:2001 & GMP certified. A company by AVC Nutrition.",
   applicationName: "Nature Life Science",
   keywords: [
     "poultry feed supplements",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   category: "Animal Health & Nutrition",
   openGraph: {
-    title: "Nature Life Science — Scientific & natural poultry health",
+    title: "Nature Life Science - Scientific & natural poultry health",
     description:
       "A complete range of herbal and nutritional supplements for poultry. ISO 9001:2001 & GMP certified.",
     url: SITE_URL,
@@ -63,9 +63,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nature Life Science — Scientific & natural poultry health",
+    title: "Nature Life Science - Scientific & natural poultry health",
     description:
-      "Herbal and nutritional supplements for poultry — immunity, gut health, production and more. ISO 9001:2001 & GMP certified.",
+      "Herbal and nutritional supplements for poultry - immunity, gut health, production and more. ISO 9001:2001 & GMP certified.",
   },
   robots: {
     index: true,
@@ -100,7 +100,7 @@ export default function RootLayout({
         logo: `${SITE_URL}/icon.svg`,
         image: `${SITE_URL}/opengraph-image`,
         description:
-          "Herbal and nutritional supplements for poultry health — immunity, gut health, production, minerals and more. ISO 9001:2001 & GMP certified.",
+          "Herbal and nutritional supplements for poultry health - immunity, gut health, production, minerals and more. ISO 9001:2001 & GMP certified.",
         foundingDate: "2019",
         parentOrganization: { "@type": "Organization", name: "AVC Nutrition" },
         address: [

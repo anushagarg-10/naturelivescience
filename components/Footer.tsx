@@ -19,7 +19,7 @@ export default function Footer() {
             </Link>
             <p className="foot-about">
               A complete range of herbal and nutritional supplements for
-              poultry — immunity, gut health, production, minerals and more.
+              poultry - immunity, gut health, production, minerals and more.
             </p>
             <div className="foot-cert">
               <span>ISO 9001:2001</span>
@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="foot-bottom">
-          <span>© 2019–2026 Nature Life Science · For animal use only</span>
+          <span>© 2019-2026 Nature Life Science · For animal use only</span>
           <span>Scientific &amp; natural solution for Poultry Health</span>
         </div>
       </div>

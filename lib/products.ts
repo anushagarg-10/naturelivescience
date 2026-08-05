@@ -67,10 +67,10 @@ export const PRODUCTS: Product[] = [
       "Reduces mortality",
     ],
     dose: [
-      ["Feed", "250–500 g / ton"],
-      ["Water · Chicks", "5–10 ml / 100 birds"],
-      ["Water · Grower", "15–20 ml / 100 birds"],
-      ["Water · Finisher", "30–40 ml / 100 birds"],
+      ["Feed", "250-500 g / ton"],
+      ["Water · Chicks", "5-10 ml / 100 birds"],
+      ["Water · Grower", "15-20 ml / 100 birds"],
+      ["Water · Finisher", "30-40 ml / 100 birds"],
     ],
     pack: "25 kg bag",
     image: "/products/immune.jpg",
@@ -102,9 +102,9 @@ export const PRODUCTS: Product[] = [
       "Infectious Bursal Disease (Gumboro)",
     ],
     dose: [
-      ["Water · Chicks", "5–10 ml / 100 birds"],
-      ["Water · Grower", "15–20 ml / 100 birds"],
-      ["Water · Finisher", "30–40 ml / 100 birds"],
+      ["Water · Chicks", "5-10 ml / 100 birds"],
+      ["Water · Grower", "15-20 ml / 100 birds"],
+      ["Water · Finisher", "30-40 ml / 100 birds"],
     ],
     pack: "5 litre / 20 litre",
     image: "/products/viral.jpg",
@@ -150,7 +150,7 @@ export const PRODUCTS: Product[] = [
     catLabel: "Gut Health",
     color: "green",
     blurb:
-      "Phytogenic blend of garlic, turmeric, tulsi and ginger — a natural antibiotic-growth-promoter for gut health and immunity.",
+      "Phytogenic blend of garlic, turmeric, tulsi and ginger - a natural antibiotic-growth-promoter for gut health and immunity.",
     comp: [
       "Allicin (garlic)",
       "Curcumin (turmeric)",
@@ -166,7 +166,7 @@ export const PRODUCTS: Product[] = [
       "Improves litter quality",
       "Helps improve immunity",
     ],
-    dose: [["Feed mixing", "500–1000 g / MT"]],
+    dose: [["Feed mixing", "500-1000 g / MT"]],
     pack: "25 kg drum",
     image: "/products/phyto.jpg",
   },
@@ -197,7 +197,7 @@ export const PRODUCTS: Product[] = [
       "Improves protein digestion",
       "Checks pathogenic bacteria & fungi",
     ],
-    dose: [["Feed", "500 g – 1 kg / tonne"]],
+    dose: [["Feed", "500 g - 1 kg / tonne"]],
     pack: "25 kg bag",
   },
   {
@@ -226,7 +226,7 @@ export const PRODUCTS: Product[] = [
       "Offsets viral effects on production",
     ],
     dose: [
-      ["Feed · Layers/Breeders", "500–1000 g / MT (post-45 wk)"],
+      ["Feed · Layers/Breeders", "500-1000 g / MT (post-45 wk)"],
       ["Feed · Pre-laying", "750 g / ton"],
       ["Feed · Treatment", "1200 g / ton"],
       ["Water · Layers", "20 ml / 100 birds"],
@@ -261,7 +261,7 @@ export const PRODUCTS: Product[] = [
     ],
     dose: [
       ["Layers/Breeders", "500 g / MT (post-45 wk)"],
-      ["Shell weakness", "1 kg / MT for 3–4 wk, then 500 g / MT"],
+      ["Shell weakness", "1 kg / MT for 3-4 wk, then 500 g / MT"],
     ],
     pack: "25 kg bag",
     image: "/products/eggshell.jpg",
@@ -293,9 +293,9 @@ export const PRODUCTS: Product[] = [
       "Hypocalcaemia",
     ],
     dose: [
-      ["Water · Chicks", "5–10 ml / 100 birds"],
-      ["Water · Grower", "15–20 ml / 100 birds"],
-      ["Water · Finisher", "30–40 ml / 100 birds"],
+      ["Water · Chicks", "5-10 ml / 100 birds"],
+      ["Water · Grower", "15-20 ml / 100 birds"],
+      ["Water · Finisher", "30-40 ml / 100 birds"],
     ],
     pack: "20 litre / 5 litre",
     image: "/products/cal.jpg",
@@ -303,12 +303,12 @@ export const PRODUCTS: Product[] = [
   {
     id: "liv",
     name: "Nature-Liv-DS",
-    sub: "Liver tonic — herbal & synthetic combination",
+    sub: "Liver tonic - herbal & synthetic combination",
     cat: "organs",
     catLabel: "Liver",
     color: "green",
     blurb:
-      "Hepato-renal tonic combining choline, methionine and phyto-actives — works in fatty liver and toxicity.",
+      "Hepato-renal tonic combining choline, methionine and phyto-actives - works in fatty liver and toxicity.",
     comp: [
       "Tri-choline Citrate 100 mg",
       "Methionine 100 mg",
@@ -316,20 +316,20 @@ export const PRODUCTS: Product[] = [
       "Protein Hydrolysate 500 mg",
       "Inositol 2 mg",
       "Vitamin B12 0.33 mg",
-      "Phyto-actives — herbal blend (QS)",
+      "Phyto-actives - herbal blend (QS)",
       "(per 10 ml)",
     ],
     ben: [
       "Quick recovery from hepatic disorders & diseases",
-      "Supports kidney water–salt balance",
+      "Supports kidney water-salt balance",
       "Reduces gout, leechi & ascites",
       "Improves egg production, hatchability & weight gain",
     ],
     dose: [
       ["Feed", "1 kg / ton"],
-      ["Water · Chicks", "5–10 ml / 100 birds"],
-      ["Water · Grower", "15–20 ml / 100 birds"],
-      ["Water · Finisher", "30–40 ml / 100 birds"],
+      ["Water · Chicks", "5-10 ml / 100 birds"],
+      ["Water · Grower", "15-20 ml / 100 birds"],
+      ["Water · Finisher", "30-40 ml / 100 birds"],
     ],
     pack: "25 litre jar / 25 kg bag",
     note: "Not for medicinal / human use",
@@ -362,9 +362,9 @@ export const PRODUCTS: Product[] = [
       "Effective in FLKS (fatty liver & kidney syndrome)",
     ],
     dose: [
-      ["Water · Chicks", "5–10 ml / 100 birds"],
-      ["Water · Grower", "10–20 ml / 100 birds"],
-      ["Water · Finisher", "20–30 ml / 100 birds"],
+      ["Water · Chicks", "5-10 ml / 100 birds"],
+      ["Water · Grower", "10-20 ml / 100 birds"],
+      ["Water · Finisher", "20-30 ml / 100 birds"],
     ],
     pack: "5 litre / 25 litre",
   },
@@ -428,9 +428,9 @@ export const PRODUCTS: Product[] = [
       "Increases body weight",
     ],
     dose: [
-      ["Water · Chicks", "5–10 ml / 100 birds"],
-      ["Water · Grower", "15–20 ml / 100 birds"],
-      ["Water · Finisher", "20–30 ml / 100 birds"],
+      ["Water · Chicks", "5-10 ml / 100 birds"],
+      ["Water · Grower", "15-20 ml / 100 birds"],
+      ["Water · Finisher", "20-30 ml / 100 birds"],
     ],
     pack: "25 litre jar",
     image: "/products/heam.jpg",
@@ -443,7 +443,7 @@ export const PRODUCTS: Product[] = [
     catLabel: "Growth",
     color: "orange",
     blurb:
-      "Enzyme + vitamin–mineral growth pack for immunity, feed efficiency, uniformity and vaccine response.",
+      "Enzyme + vitamin-mineral growth pack for immunity, feed efficiency, uniformity and vaccine response.",
     comp: [
       "Phytase, β-Glucanase, Xylanase, Cellulase",
       "β-Mannanase, α-Glucosidase, Amylase, Lipase",
@@ -476,7 +476,7 @@ export const PRODUCTS: Product[] = [
     catLabel: "Fertility",
     color: "red",
     blurb:
-      "Herbal andrology support for breeder males — semen quality, motility and fertility.",
+      "Herbal andrology support for breeder males - semen quality, motility and fertility.",
     comp: [
       "Vitamin E, Organic Zinc, Processed Shilajit",
       "Mucuna pruriens",
@@ -492,8 +492,8 @@ export const PRODUCTS: Product[] = [
       "Supports development & maturity of sexual organs",
     ],
     dose: [
-      ["Males 16–20 wk", "25 g / 100 birds · 10 days"],
-      ["Males 40 wk+", "50 g / 100 birds · 7–10 days, monthly"],
+      ["Males 16-20 wk", "25 g / 100 birds · 10 days"],
+      ["Males 40 wk+", "50 g / 100 birds · 7-10 days, monthly"],
       ["Liquid", "1 ml / male bird"],
       ["Treatment", "1 g / male bird"],
     ],
@@ -508,7 +508,7 @@ export const PRODUCTS: Product[] = [
     catLabel: "Parasite Control",
     color: "green",
     blurb:
-      "Herbal, plant-based supplement that repels and controls ectoparasites — red mite, lice, tick and scaly-leg mite.",
+      "Herbal, plant-based supplement that repels and controls ectoparasites - red mite, lice, tick and scaly-leg mite.",
     comp: [
       "Clove",
       "Allium sativum (garlic)",
@@ -523,7 +523,7 @@ export const PRODUCTS: Product[] = [
       "100% natural & plant-based",
       "Supports immunity & skin health",
       "Improves wellbeing & productivity",
-      "Safe for birds — no withdrawal, no residue",
+      "Safe for birds - no withdrawal, no residue",
     ],
     dose: [
       ["10,000-bird flock", "1.0 L daily, diluted in 1500 L water"],
@@ -540,7 +540,7 @@ export const PRODUCTS: Product[] = [
     catLabel: "Heat Stress",
     color: "orange",
     blurb:
-      "A scientific combination of orange & amla extract, mint and chromium — keeps birds cool, hydrated and productive through heat stress.",
+      "A scientific combination of orange & amla extract, mint and chromium - keeps birds cool, hydrated and productive through heat stress.",
     comp: [
       "Vitamin C",
       "Orange extracts",
@@ -557,7 +557,7 @@ export const PRODUCTS: Product[] = [
       "Reduces wing-spreading & restlessness",
       "Supports immunity & performance under heat",
     ],
-    dose: [["Feed", "150–250 g / ton"]],
+    dose: [["Feed", "150-250 g / ton"]],
     pack: "25 kg bag",
     image: "/products/chrome.jpg",
   },

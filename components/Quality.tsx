@@ -16,7 +16,7 @@ export default function Quality() {
             Manufactured under ISO 9001:2001 and GMP-certified processes, with
             technical support from A.V.C. Nutrition, Dehradun (UK) 248007. Every
             product carries a transparent, quantified composition and clear
-            dosing — supported across India from our offices in Hyderabad and
+            dosing - supported across India from our offices in Hyderabad and
             Chandigarh.
           </p>
           <div className="seals">

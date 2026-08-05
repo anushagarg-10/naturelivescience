@@ -10,7 +10,7 @@ export default function Partners() {
             Nature Life Science, a company by <em>AVC&nbsp;Nutrition</em>.
           </h2>
           <p>
-            Herbal and nutritional poultry health — backed by AVC Nutrition,
+            Herbal and nutritional poultry health - backed by AVC Nutrition,
             with technical consulting from Nutrien Ag Solutions, Braidwood,
             Australia.
           </p>
@@ -27,7 +27,7 @@ export default function Partners() {
           <div className="partner-card">
             <Image
               src="/logos/avc-nutrition.png"
-              alt="AVC Nutrition — consulting partner Nutrien Ag Solutions, Braidwood Australia"
+              alt="AVC Nutrition - consulting partner Nutrien Ag Solutions, Braidwood Australia"
               width={541}
               height={560}
             />

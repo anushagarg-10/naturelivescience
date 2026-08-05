@@ -8,7 +8,7 @@ export default function Actives() {
             Drawn from the <em>apothecary</em>, dosed by the lab.
           </h2>
           <p>
-            The phyto-actives at the heart of our range — each with a long
+            The phyto-actives at the heart of our range - each with a long
             history in animal health, each quantified and standardised in every
             batch.
           </p>
@@ -30,7 +30,7 @@ export default function Actives() {
             </div>
             <h3>Tulsi</h3>
             <div className="latin">Ocimum sanctum</div>
-            <p>Holy basil — supports respiratory health and immune resilience.</p>
+            <p>Holy basil - supports respiratory health and immune resilience.</p>
             <div className="inn">In · Immune-Plus · Phyto-Mix · Respone-Plus</div>
           </div>
 
@@ -70,7 +70,7 @@ export default function Actives() {
             </div>
             <h3>Amla</h3>
             <div className="latin">Emblica officinalis</div>
-            <p>Indian gooseberry — a natural vitamin-C source and immune-liver tonic.</p>
+            <p>Indian gooseberry - a natural vitamin-C source and immune-liver tonic.</p>
             <div className="inn">In · Immune-Plus · Production-Plus · Phyto-Mix</div>
           </div>
 

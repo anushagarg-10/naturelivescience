@@ -6,7 +6,7 @@ const PILLARS = [
   {
     no: "i",
     title: "Herbal tradition",
-    body: "Time-honoured botanicals — tulsi, turmeric, amla, ashwagandha, neem and more — each with a long history in animal health, drawn from the apothecary.",
+    body: "Time-honoured botanicals - tulsi, turmeric, amla, ashwagandha, neem and more - each with a long history in animal health, drawn from the apothecary.",
   },
   {
     no: "ii",
@@ -53,7 +53,7 @@ export default function About() {
             </h2>
             <p>
               Nature Life Science was founded to give the poultry industry a
-              complete materia medica — herbal and nutritional supplements
+              complete materia medica - herbal and nutritional supplements
               formulated with the rigour of modern feed science, and backed by
               A.V.C. Nutrition&rsquo;s technical expertise.
             </p>
@@ -68,13 +68,13 @@ export default function About() {
             <Image
               className="facility-img"
               src="/about/building.jpg"
-              alt="Nature Life Science manufacturing facility — a company by AVC Nutrition"
+              alt="Nature Life Science manufacturing facility - a company by AVC Nutrition"
               fill
               sizes="(max-width: 920px) 100vw, 1130px"
               priority
             />
             <figcaption className="facility-cap">
-              Our facility — Nature Life Science, a company by AVC Nutrition.
+              Our facility - Nature Life Science, a company by AVC Nutrition.
             </figcaption>
           </figure>
         </div>
@@ -91,7 +91,7 @@ export default function About() {
               Healthier flocks come from working with a bird&rsquo;s biology
               rather than against it. Our range pairs phyto-actives with organic
               minerals, enzymes and probiotics to support immunity, gut health,
-              production and fertility — from the first chick to the last lay.
+              production and fertility - from the first chick to the last lay.
             </p>
             <p>
               Each formulation is built around actives with a long record in

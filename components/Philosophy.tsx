@@ -20,7 +20,7 @@ export default function Philosophy() {
           <h2>
             Healthier flocks come from <em>feeding biology</em>, not fighting it.
           </h2>
-          <div className="by">— The Nature Life Science approach</div>
+          <div className="by">- The Nature Life Science approach</div>
         </blockquote>
       </div>
     </div>

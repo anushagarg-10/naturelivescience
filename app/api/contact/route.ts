@@ -26,7 +26,7 @@ export async function POST(req: Request) {
 
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
-    // Not configured yet — fail clearly so the front-end shows an error,
+    // Not configured yet - fail clearly so the front-end shows an error,
     // and log a hint for the developer.
     console.error("RESEND_API_KEY is not set. Add it to your environment.");
     return NextResponse.json(
@@ -52,10 +52,10 @@ export async function POST(req: Request) {
       text: [
         `Name: ${name}`,
         `Contact: ${contact}`,
-        `Type: ${type ?? "—"}`,
+        `Type: ${type ?? "-"}`,
         "",
         "Message:",
-        message || "—",
+        message || "-",
       ].join("\n"),
     });
 

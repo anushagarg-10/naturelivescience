@@ -7,6 +7,18 @@
       "runtimeArgs": ["run", "dev"],
       "port": 3000,
       "autoPort": true
+    },
+    {
+      "name": "job-scout",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "/Users/anushagarg/Desktop/job-scout"],
+      "port": 3000
+    },
+    {
+      "name": "go8-regalia",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "/Users/anushagarg/Desktop/go8-regalia-configurator"],
+      "port": 3000
     }
   ]
 }
