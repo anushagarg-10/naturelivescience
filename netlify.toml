@@ -1,6 +1,6 @@
 # Netlify configuration for the Next.js app.
 # Netlify auto-detects Next.js and applies its official runtime, which turns the
-# app/api/contact route into a serverless function — no extra plugin config needed.
+# app/api/contact route into a serverless function - no extra plugin config needed.
 #
 # Security headers are set in next.config.mjs (headers()) so they apply to the
 # Next-rendered pages; netlify.toml [[headers]] do not cover those routes.

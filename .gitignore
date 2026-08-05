@@ -11,10 +11,7 @@ npm-debug.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Local editor / dev config
-/.claude/
-
-# Unrelated local project — not part of this website
+# Unrelated local project (not part of this website)
 /portfolio
 
 # Design source files and backups (kept local, not needed to build)
