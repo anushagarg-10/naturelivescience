@@ -23,7 +23,7 @@ export default function Hero() {
             </p>
             <div className="hero-meta">
               <span><i /> {PRODUCTS.length} formulations</span>
-              <span><i /> ISO 9001:2001</span>
+              <span><i /> ISO 9001</span>
               <span><i /> GMP certified</span>
             </div>
             <div className="hero-actions">

@@ -22,7 +22,7 @@ const CARDS = [
     no: "iii",
     title: "Quality & provenance",
     blurb:
-      "ISO 9001:2001 and GMP-certified processes, transparent quantified composition, and technical support from A.V.C. Nutrition.",
+      "ISO 9001 and GMP-certified processes, transparent quantified composition, and technical support from A.V.C. Nutrition.",
     cta: "See our standard",
   },
   {

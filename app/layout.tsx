@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: "%s · Nature Life Science",
   },
   description:
-    "Herbal and nutritional supplements for poultry health - immunity, gut health, production, minerals and more. ISO 9001:2001 & GMP certified. A company by AVC Nutrition.",
+    "Herbal and nutritional supplements for poultry health - immunity, gut health, production, minerals and more. ISO 9001 & GMP certified. A company by AVC Nutrition.",
   applicationName: "Nature Life Science",
   keywords: [
     "poultry feed supplements",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nature Life Science - Scientific & natural poultry health",
     description:
-      "A complete range of herbal and nutritional supplements for poultry. ISO 9001:2001 & GMP certified.",
+      "A complete range of herbal and nutritional supplements for poultry. ISO 9001 & GMP certified.",
     url: SITE_URL,
     siteName: "Nature Life Science",
     locale: "en_IN",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nature Life Science - Scientific & natural poultry health",
     description:
-      "Herbal and nutritional supplements for poultry - immunity, gut health, production and more. ISO 9001:2001 & GMP certified.",
+      "Herbal and nutritional supplements for poultry - immunity, gut health, production and more. ISO 9001 & GMP certified.",
   },
   robots: {
     index: true,
@@ -100,7 +100,7 @@ export default function RootLayout({
         logo: `${SITE_URL}/icon.svg`,
         image: `${SITE_URL}/opengraph-image`,
         description:
-          "Herbal and nutritional supplements for poultry health - immunity, gut health, production, minerals and more. ISO 9001:2001 & GMP certified.",
+          "Herbal and nutritional supplements for poultry health - immunity, gut health, production, minerals and more. ISO 9001 & GMP certified.",
         foundingDate: "2019",
         parentOrganization: { "@type": "Organization", name: "AVC Nutrition" },
         address: [

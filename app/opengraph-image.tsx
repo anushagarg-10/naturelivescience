@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "Nature Life Science - herbal & nutritional poultry supplements. ISO 9001:2001 & GMP certified.";
+  "Nature Life Science - herbal & nutritional poultry supplements. ISO 9001 & GMP certified.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -81,7 +81,7 @@ export default function OpengraphImage() {
             letterSpacing: 4,
           }}
         >
-          ISO 9001:2001 · GMP CERTIFIED · 16 FORMULATIONS
+          ISO 9001 · GMP CERTIFIED · 16 FORMULATIONS
         </div>
       </div>
     ),
